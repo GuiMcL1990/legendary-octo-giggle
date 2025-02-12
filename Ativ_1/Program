@@ -1,0 +1,21 @@
+package Davidson_Tarde_Ativ_1.Main.Program;
+
+import java.util.Scanner;
+import Davidson_Tarde_Ativ_1.Main.Object.Maior_Num;
+public class Ativ_1 {
+        public static void main(String[] args) {
+            double a, b;
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("Digite a nota do aluno:");
+            a = sc.nextDouble();
+            System.out.println("Digite a segunda nota do aluno:");
+            b = sc.nextDouble();
+
+            Maior_Num aluno = new Maior_Num(a, b);
+
+            System.out.println(aluno.toString());
+
+            sc.close();
+        }
+    }

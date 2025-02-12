@@ -1,0 +1,40 @@
+package Davidson_Tarde_Ativ_1.Main.Object;
+
+public class Maior_Num {
+            public double a;
+            public double b;
+            public double c;
+            public String Result;
+
+            public Maior_Num(double a, double b) {
+                this.a = a;
+                this.b = b;
+                this.c = (a + b) / 2;
+            }
+
+            public int calcularResultado(){
+                if (c >= 7) {
+                    this.Result = "Aprovado";
+                } else if (c == 5) {
+                    this.Result = "Aprovado";
+                } else {
+                    this.Result = "Aprovado";
+                }
+                return 0;
+            }
+
+            public double getMedia() {
+                return c;
+            }
+
+    @Override
+    public String toString() {
+        return "Maior_Num{" +
+                "a=" + a +
+                ", b=" + b +
+                ", c=" + c +
+                ", Result='" + Result + '\'' +
+                '}';
+    }
+}
+

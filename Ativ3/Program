@@ -1,0 +1,24 @@
+package Davidson_Tarde_Ativ_3.Main.Object3;
+
+public class Object {
+    public char a;
+    public String Result;
+
+    public Object(char a, char b) {
+        this.a = a;
+    }
+
+    public int vogal(char a) {
+       int aux;
+       if (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u') {
+           aux = 0;
+       } else {            aux = 1;
+       }
+      return aux;
+      }
+    @Override
+    public String toString() {
+        return "a letra " + a + " é uma vogal" ;
+
+    }
+}

@@ -21,10 +21,8 @@ public class Object2 {
 
         @Override
         public String toString() {
-            return "Maior_Num{" +
+            return "Maior_Num" +
                     "a=" + a +
-                    ", b=" + b +
-                    ", Result='" + Result + '\'' +
-                    '}';
+                    ", b=" + b;
         }
     }

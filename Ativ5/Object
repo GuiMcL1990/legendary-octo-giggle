@@ -1,0 +1,25 @@
+package Davidson_Tarde_Ativ_5.Main;
+
+public class Object {
+    public static int Idade(int a) {
+        if (a >= 0 && a <= 12) {
+            System.out.println("A pessoa é uma criança.");
+        } else if (a >= 13 && a <= 17) {
+            System.out.println("A pessoa é um adolescente.");
+        } else if (a >= 18 && a <= 59) {
+            System.out.println("A pessoa é um adulto.");
+        } else if (a >= 60) {
+            System.out.println("A pessoa é um idoso.");
+        } else {
+            System.out.println("Idade inválida");
+
+        }
+        return a;
+
+    }
+
+    @Override
+    public String toString() {
+        return "O numero é " + a;
+    }
+}

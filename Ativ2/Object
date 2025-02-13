@@ -1,0 +1,30 @@
+package Davidson_Tarde_Ativ_2.Main.Object2;
+
+public class Object2 {
+    public int a;
+    public int b;
+    public String Result;
+
+    public Object2(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    public int calcularResultado() {
+        if (a > b) {
+            this.Result = "O primeiro numero é maior";
+        } else {
+            this.Result = "O segundo numero é maior";
+        }
+        return a;
+    }
+
+        @Override
+        public String toString() {
+            return "Maior_Num{" +
+                    "a=" + a +
+                    ", b=" + b +
+                    ", Result='" + Result + '\'' +
+                    '}';
+        }
+    }

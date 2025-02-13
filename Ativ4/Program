@@ -1,0 +1,21 @@
+package Davidson_Tarde_Ativ_4.Main;
+
+import Davidson_Tarde_Ativ_2.Main.Object2.Object2;
+
+import javax.xml.transform.Result;
+import java.util.Scanner;
+
+public class Program {
+        public static void main(String[] args) {
+            int a;
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("Digite um numero:");
+            a = sc.nextInt();
+            Object Positivo = new Object(a);
+
+            System.out.println(Positivo.toString());
+
+            sc.close();
+        }
+}

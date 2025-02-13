@@ -1,0 +1,18 @@
+package Davidson_Tarde_Ativ_5.Main;
+
+import Davidson_Tarde_Ativ_4.Main.Object;
+
+import java.util.Scanner;
+
+public class Program {
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Digite a idade da pessoa:");
+            int a = sc.nextInt();
+
+            Object Idade = new Object(a);
+            System.out.println(Idade.toString());
+
+            sc.close();
+        }
+    }

@@ -1,0 +1,26 @@
+package Davidson_Tarde_Ativ_4.Main;
+
+public class Object  {
+    public int a;
+    public String Result;
+
+    public Object(int a) {
+        this.a = a;
+        this.Result = (a > 0) ? "positivo" : (a < 0) ? "negativo" : "nulo";
+    }
+    public int Positivo(int a, String Result) {
+        if (a > 0) {
+            System.out.println("O numero é positivo ");
+        } else if (a < 0) {
+            System.out.println("O numero é negativo ");
+        } else {
+            System.out.println("O numero é nulo");
+        }
+
+        return a;
+    }
+    @Override
+    public String toString() {
+        return "O numero é " + a + Result;
+    }
+}

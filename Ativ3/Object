@@ -1,0 +1,18 @@
+package Davidson_Tarde_Ativ_3.Main.Object3;
+
+import Davidson_Tarde_Ativ_2.Main.Object2.Object2;
+
+import java.util.Scanner;
+        public class Program {
+            public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Digite uma letra:");
+                char a = sc.next().toLowerCase().charAt(0);
+                char Result = (a);
+                Object Vogal = new Object(a, Result);
+
+                System.out.println(Vogal.toString());
+
+                sc.close();
+            }
+        }

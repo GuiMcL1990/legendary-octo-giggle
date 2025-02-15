@@ -1,25 +1,32 @@
 package Davidson_Tarde_Ativ_5.Main;
 
-public class Object {
-    public static int Idade(int a) {
-        if (a >= 0 && a <= 12) {
-            System.out.println("A pessoa é uma criança.");
-        } else if (a >= 13 && a <= 17) {
-            System.out.println("A pessoa é um adolescente.");
-        } else if (a >= 18 && a <= 59) {
-            System.out.println("A pessoa é um adulto.");
-        } else if (a >= 60) {
-            System.out.println("A pessoa é um idoso.");
+public class Pessoa {
+    private int idade;
+
+    public Pessoa(int idade) {
+        this.idade = idade;
+    }
+
+    public void classificarIdade() {
+        if (this.idade >= 0 && this.idade <= 12) {
+            this.imprimir("A pessoa é uma criança.");
+        } else if (this.idade >= 13 && this.idade <= 17) {
+            this.imprimir("A pessoa é um adolescente.");
+        } else if (this.idade >= 18 && this.idade <= 59) {
+            this.imprimir("A pessoa é um adulto.");
+        } else if (this.idade >= 60) {
+            this.imprimir("A pessoa é um idoso.");
         } else {
-            System.out.println("Idade inválida");
-
+            this.imprimir("Idade inválida");
         }
-        return a;
+    }
 
+    private void imprimir(String mensagem) {
+        System.out.println(mensagem);
     }
 
     @Override
     public String toString() {
-        return "O numero é " + a;
+        return "A idade da pessoa é " + this.idade;
     }
 }
